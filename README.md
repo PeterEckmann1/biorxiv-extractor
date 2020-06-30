@@ -14,10 +14,12 @@ python biorxiv.py [-h] [--noheader] [--section {methods,results,discussion}] doi
      The main sections of the paper are labeled in a `json` list, and all subheaders are removed.
    * `txt` uses full-text HTML if available, otherwise an error is thrown. Using `txt` will by default extract the entire paper's text, without references.
      A specific section can be specified using `--section`, i.e. `--section=methods`, `--section=results`, or `--section=discussion`. All headers and sub headers will be included in the `txt` by default, but can be disabled using `--noheader`.
+     
  * `outfile` is where the result is saved.
 
+
 <h2>Setup</h2>
-Python 3.6.0 or greater is required for the `json` option to work correctly, but any version of Python 3 will work for`pdf` and `txt` extraction.
+Python 3.6.0 or greater is required for the `json` option to work correctly, but any version of Python 3 will work for pdf and `txt` extraction.
 <h3>Dependencies</h3>
 
  * [`beautifulsoup4 >= 4.9.1`](https://pypi.org/project/beautifulsoup4/), install with `pip install beautifulsoup4`
