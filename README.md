@@ -19,7 +19,7 @@ python biorxiv.py [-h] [--noheader] [--section {methods,results,discussion}] doi
 
 
 <h2>Setup</h2>
-Python 3.6.0 or greater is required for the `json` option to work correctly, but any version of Python 3 will work for pdf and `txt` extraction.
+Python 3.6.0 or greater is required for the json option to work correctly, but any version of Python 3 will work for pdf and txt extraction.
 <h3>Dependencies</h3>
 
  * [`beautifulsoup4 >= 4.9.1`](https://pypi.org/project/beautifulsoup4/), install with `pip install beautifulsoup4`
