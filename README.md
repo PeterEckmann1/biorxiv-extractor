@@ -7,7 +7,7 @@ Extracts data from medRxiv and bioRxiv preprints.
 python biorxiv.py [-h] [--noheader] [--section {methods,results,discussion}] doi {pdf,json,txt} outfile
 ```
 
- * `doi` gives the DOI of the preprint you want to extract
+ * `doi` is the DOI of the preprint to extract
  * `format` must be either `pdf`, `json`, or `txt`, and specifies the file format to download the preprint in.
    * `pdf` downloads the preprint in its raw PDF format
    * `json` uses full-text HTML if available, otherwise an error is thrown. 
