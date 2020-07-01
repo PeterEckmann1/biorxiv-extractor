@@ -13,7 +13,7 @@ python biorxiv.py [-h] [--noheader] [--section {methods,results,discussion}] doi
    * `json` uses full-text HTML if available, otherwise an error is thrown. 
      The main sections of the paper are labeled in a `json` list, and all subheaders are removed.
    * `txt` uses full-text HTML if available, otherwise an error is thrown. Using `txt` will by default extract the paper's entire text, excluding references.
-     A specific section can be specified using `--section`, i.e. `--section=methods`, `--section=results`, or `--section=discussion`. All headings and subheadings will be included in the `txt` by default, but can be disabled using `--noheader`.
+     A specific section can be specified using `--section`, i.e. `--section=methods`, `--section=results`, or `--section=discussion`. All headings and subheadings will be included in the `txt` by default, but can be disabled using `--noheader` (recommended if your tool tokenizes on sentences, because rule-based tokenizers will often combine the header and the subsequent sentence).
      
  * `outfile` is where the result is saved.
 
